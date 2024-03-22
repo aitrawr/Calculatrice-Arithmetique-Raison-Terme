@@ -1,3 +1,6 @@
+
+https://github.com/aitrawr/Calculatrice-Arithmetique-Raison-Terme/assets/110969138/d203981d-2b68-410a-8cf9-2d836bb48afb
+
 ENFIN LA VIE DE MA MERE CA MA PRIS 4H LOL       
 
          salut c'mon premier VRAI truc que j'fait et c'est des math.. bouuuuuh le nullos...
