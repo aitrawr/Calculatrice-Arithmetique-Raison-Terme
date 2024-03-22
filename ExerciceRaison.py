@@ -2,13 +2,13 @@ import random
 from colorama import Fore, Style
 
 def generate_exercise():
-    Ux = random.randint(1, 10)  # Numéro du terme connu
-    y = random.randint(1, 999)  # Valeur du terme connu
-    n = random.randint(Ux + 1, Ux + 10)  # Numéro du terme correspondant à Un
-    Un = y + (n - Ux) * random.randint(1, 20)  # Valeur du terme correspondant à n
-    r = (Un - y) / (n - Ux)  # Calcul de la raison
+    Ux = random.randint(1, 10)  # numéro du terme connu
+    y = random.randint(1, 999)  # valeur du terme connu
+    n = random.randint(Ux + 1, Ux + 10)  # numéro du terme correspondant à Un
+    Un = y + (n - Ux) * random.randint(1, 20)  # valeur du terme correspondant à n
+    r = (Un - y) / (n - Ux)  # formule de calcul
 
-    # Générer l'énoncé de l'exercice
+    #
     exercise = f"U{Fore.BLUE}{Ux}{Style.RESET_ALL} = {Fore.RED}{y}{Style.RESET_ALL}  U{Fore.BLUE}{n}{Style.RESET_ALL} = {Fore.RED}{Un}{Style.RESET_ALL}\n trouve r mdr"
 
     return exercise, r
@@ -31,7 +31,7 @@ def main():
 
             try:
                 user_answer = float(user_answer)
-                if abs(user_answer - correct_answer) < 0.01:  # Utilise une tolérance pour la comparaison
+                if abs(user_answer - correct_answer) < 0.01:  # utilise une tolerancee pour la comparsison
                     print(Fore.GREEN + "oui c'est sa" + Style.RESET_ALL)
                 else:
                     print(Fore.RED + f"non, c'est {correct_answer}." + Style.RESET_ALL)
