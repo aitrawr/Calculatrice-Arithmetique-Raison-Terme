@@ -17,7 +17,7 @@ def main():
     while True:
         try:
             print()
-            user_input = input("salut appuyer sur enter pour continuer et exit pour partir. par zze/yyna/ait/zenox cque tu veux jsp")
+            user_input = input("enter pour continuer et exit pour partir. ")
             if user_input.lower() == exit_command:
                 print("Fin du programme.")
                 break
