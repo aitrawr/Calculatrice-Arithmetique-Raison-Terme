@@ -9,7 +9,7 @@ def generate_exercise():
 
     terms = {}
     for n in n_values:
-        terms[n] = a0 + (n - 1) * r
+        terms[n] = a0 + (n - 1) * r   #Formule incorrecte, j'corrigerait sa après. 22/03/2024 15:17H
 
     exercise = f"r = {Fore.RED}{r}{Style.RESET_ALL}  U{Fore.BLUE}0{Style.RESET_ALL} = {Fore.RED}{a0}{Style.RESET_ALL}"
     exercise += "\ncalcule tout sa stp  :"
