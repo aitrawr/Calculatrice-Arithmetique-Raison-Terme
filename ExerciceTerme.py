@@ -11,7 +11,6 @@ def generate_exercise():
     for n in n_values:
         terms[n] = a0 + (n - 1) * r
 
-    # Générer l'énoncé de l'exercice
     exercise = f"r = {Fore.RED}{r}{Style.RESET_ALL}  U{Fore.BLUE}0{Style.RESET_ALL} = {Fore.RED}{a0}{Style.RESET_ALL}"
     exercise += "\ncalcule tout sa stp  :"
     for n, term in terms.items():
@@ -21,7 +20,7 @@ def generate_exercise():
 
 def is_close(value, target, tolerance=1):
     """
-    Vérifie si une valeur est proche d'une cible dans une certaine tolérance.
+    vérifie si une valeur est proche d'une cible dans une certaine tolérance
     """
     return abs(value - target) <= tolerance
 
